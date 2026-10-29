@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--som-->
+    <audio id="musicaFundo" autoplay loop>
+      <source src="musica.mp3"
+      type="audio/mpeg"> 
+    </audio>
+   </div>
+
+        <h1> Meu Primeiro site com JavaScript</h1>
+        <!-- Bloco 1: Hórario Atual -->
+         <div class="bloco">
+            <h2>Hórario Atual</h2>
+            <p id="relogio">00:00:00</p>
+         </div>
+
+         <!-- Bloco 2: Entrada no Evento-->
+          <div class="bloco">
+            <h2> Entrada no evento</h2>
+            <div class="linha-input">
+                <input type="number" id="idade" placeholder="digite sua idade">
+                <button onclick="verificarIdade()">Verificar Idade</button>
+            </div>
+            <p id= "resultadoIdade"></p>
+          </div>
+
+          <!-- Bloco 3: Aparência do Site-->
+           <div class="bloco">
+            <h2>Aparência do site</h2>
+            <button onclick="mudarTema()">Mudar tema</button>
+           </div>
+
+           <script src="script.js"></script>
+      
+</body>
+</html>

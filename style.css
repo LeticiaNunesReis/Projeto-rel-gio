@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #aa6cdd;
+    margin-bottom: 25px;
+}
+
+.bloco {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    min-width: 150px;
+    box-sizing:border-box;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bloco h2 {
+    font-size: 16px;
+    color: #4b4b4b;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Caixa maior do horário */
+.bloco:has(#relogio) {
+    width: 100%;
+    max-width: 600px;
+    min-height: 250px;
+    padding: 35px;
+    box-sizing: border-box;
+    background: #f8f5ff;
+    border: 1px solid #e5dcf2;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(70, 50, 100, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título */
+.bloco:has(#relogio) h2 {
+    color: #8b78b8;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Números do horário */
+#relogio {
+    color: #392c50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+    font-size: clamp(55px, 10vw, 80px);
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+
+.linha-input {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 140px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #b57ce4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b57ce4;
+}
+
+#resultadoIdade {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Classe para o tema escuro (Bloco 3) */
+body.escuro {
+    background-color: #222;
+    color: #fff;
+}
+
+body.escuro .bloco {
+    background: #333;
+    color: #fff;
+}
+
+body.escuro h1, body.escuro .bloco h2 {
+    color: #fff;
+}
